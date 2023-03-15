@@ -1,0 +1,56 @@
+@import "https://necolas.github.io/normalize.css/latest/normalize.css";
+
+.comment__container {
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
+}
+
+.comment__title {
+    text-align: center;
+}
+
+.input__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.input__name {
+    height: 30px;
+}
+
+.input__date {
+    height: 30px;
+}
+
+.input__text {
+    height: 100px;
+    margin-bottom: 6px;
+}
+
+.comment__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment__like {
+    height: 30px;
+}
+
+.comment__remove {
+    height: 50px;
+}
+
+.error__text {
+    color: red;
+}
+
+.error__border {
+    border: 1px solid red;
+}

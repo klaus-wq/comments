@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Comments</title>
+</head>
+<body>
+    <div class="comment__container">
+        <h1 class="comment__title">Список комментариев</h1>
+        <div class="input__header">
+            <div>
+                <input id="input__name" class="input__name" type="text" placeholder="Имя">
+                <div id="name__error" class="error__text"></div>
+            </div>
+            <input id="input__date" type="date">
+        </div>
+        <textarea id="input__text" class="input__text" type="text" placeholder="Комментарий">
+        <div id="text__error" class="error__text"></div>
+        <button id="button__add">Добавить</button>
+        <div id="comment__list">
+            <!-- <div class="comment__block">
+                <div class="comment__header">
+                    <div class="comment__name"></div>
+                    <div class="comment__date"></div>
+                </div>
+                <div class="comment__body"></div>
+                <div class="comment__footer">
+                    <img src="./img/like.svg" alt="like" class="comment__like">
+                    <img src="./img/trash.svg" alt="trash" class="comment__remove">
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+    <script src="./js/script.js"></script>  
+</html>
