@@ -18,40 +18,55 @@ body {
 .input__header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
 }
 
 .input__name {
     height: 30px;
     margin-bottom: 4px;
     padding: 6px;
+    border: 1px solid rgb(187, 165, 209);
 }
 
 .input__date {
     height: 30px;
     padding: 6px;
+    border: 1px solid rgb(187, 165, 209);
+    margin-bottom: 4px;
 }
 
 .input__text {
-    width: 100%;
+    width: -webkit-fill-available;
     height: 100px;
     margin-bottom: 4px;
     padding: 6px;
+    border: 1px solid rgb(187, 165, 209);
 }
 
 .comment__block {
     padding: 6px;
     margin-bottom: 6px;
     border-bottom: 1px solid rebeccapurple;
+    overflow-wrap: anywhere;
 }
 
 .comment__header {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; */
+    display: grid;
 }
 
 .comment__name {
     font-weight: bold;
     margin-bottom: 4px;
+}
+
+.comment__date {
+    padding-left: 4px;
+    justify-self: flex-end;
+    grid-column: 2;
 }
 
 .comment__footer {
@@ -87,3 +102,4 @@ body {
     font-weight: bold;
     margin-bottom: 8px;
 }
+
