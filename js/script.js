@@ -27,7 +27,7 @@ function checkNameError() {
 
 function checkTextError() {
     if (input__text.value.length < 2) {
-        text__error.textContent = "Комментарий должно быть не короче 2 символов!";
+        text__error.textContent = "Комментарий должен быть не короче 2 символов!";
         input__text.classList.add("error__border");
         input__text.oninput = checkTextError;
         return true;
@@ -129,10 +129,10 @@ function parseDate() {
         stringDay = "Вчера";
     }
     else {
-        return dateValue.toLocaleDateString() + " " + nowTime;
+        return dateValue.toLocaleDateString() + ", " + nowTime;
     }
 
-    return stringDay + " " + nowTime;
+    return stringDay + ", " + nowTime;
 }
 
 button__add.onclick = function () {

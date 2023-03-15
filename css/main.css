@@ -1,8 +1,13 @@
 @import "https://necolas.github.io/normalize.css/latest/normalize.css";
 
+body {
+    background: rgb(235, 236, 243);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .comment__container {
-    max-width: 400px;
-    padding: 10px;
+    max-width: 800px;
+    padding: 20px;
     margin: auto;
 }
 
@@ -13,20 +18,30 @@
 .input__header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 6px;
 }
 
 .input__name {
     height: 30px;
+    margin-bottom: 4px;
+    padding: 6px;
 }
 
 .input__date {
     height: 30px;
+    padding: 6px;
 }
 
 .input__text {
+    width: 100%;
     height: 100px;
+    margin-bottom: 4px;
+    padding: 6px;
+}
+
+.comment__block {
+    padding: 6px;
     margin-bottom: 6px;
+    border-bottom: 1px solid rebeccapurple;
 }
 
 .comment__header {
@@ -34,9 +49,15 @@
     justify-content: space-between;
 }
 
+.comment__name {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
 .comment__footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .comment__like {
@@ -49,8 +70,20 @@
 
 .error__text {
     color: red;
+    margin-bottom: 6px;
 }
 
 .error__border {
     border: 1px solid red;
+}
+
+.button__add {
+    color: #fff;
+    background-color: rgb(101, 101, 224);
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
