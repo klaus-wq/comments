@@ -45,9 +45,11 @@ body {
 }
 
 .comment__block {
-    padding: 6px;
+    padding: 10px;
     margin-bottom: 6px;
-    border-bottom: 1px solid rebeccapurple;
+    /* border-bottom: 1px solid rebeccapurple; */
+    border: 1px solid black;
+    border-radius: 10px;
     overflow-wrap: anywhere;
 }
 
@@ -56,6 +58,8 @@ body {
     justify-content: space-between;
     flex-wrap: wrap; */
     display: grid;
+    border-bottom: 1px solid black;
+    border-bottom-width: 1px;
 }
 
 .comment__name {
