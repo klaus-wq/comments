@@ -59,7 +59,6 @@ body {
     flex-wrap: wrap; */
     display: grid;
     border-bottom: 1px solid black;
-    border-bottom-width: 1px;
 }
 
 .comment__name {
