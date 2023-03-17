@@ -121,10 +121,7 @@ function parseDate() {
     // if (diff < 0) {
     //     return new Date().toLocaleString();
     // }
-    let nowTime = new Date().getHours() + ":" + new Date().getMinutes();
-    if (new Date().getMinutes() < 10) {
-        nowTime = new Date().getHours() + ":" + "0" + new Date().getMinutes();
-    }
+    let nowTime = new Date().getHours().toString().padStart(2, "0") + ":" + new Date().getMinutes().toString().padStart(2, "0");
     let stringDay;
     if (diff == 0) {
         stringDay = "Сегодня";
