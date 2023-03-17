@@ -12,8 +12,8 @@ input__text.onkeydown = function (key) {
 };
 
 function checkNameError() {
-    if (input__name.value.length === 0) {
-        name__error.textContent = "Введите имя!";
+    if (input__name.value.length < 2) {
+        name__error.textContent = "Имя должно быть не короче 2-ух символов!";
         input__name.classList.add("error__border");
         input__name.oninput = checkNameError;
         return true;
@@ -26,8 +26,8 @@ function checkNameError() {
 }
 
 function checkTextError() {
-    if (input__text.value.length === 0) {
-        text__error.textContent = "Введите комментарий!";
+    if (input__text.value.length < 2) {
+        text__error.textContent = "Комментарий должен быть не короче 2-ух символов!";
         input__text.classList.add("error__border");
         input__text.oninput = checkTextError;
         return true;
